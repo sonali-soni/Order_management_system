@@ -93,13 +93,13 @@ To build and run the application using Docker, use the following commands:
 - Build the Docker image:
 
   ```bash
-  docker build -t order-management-app .
+  docker build -t Order_management_system .
   ```
 
 - Run the Docker container:
 
   ```bash
-  docker run -p 3000:3000 order-management-app
+  docker run -p 3000:3000 Order_management_system
   ```
 
 - Access the application at http://localhost:3000
