@@ -1,0 +1,89 @@
+@import '../utils/mixins';
+
+.order-detail-container {
+  margin: 0 auto;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: 25px 0;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+      button {
+        @include primary-button;
+      }
+    }
+  }
+
+  input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .place-order {
+    @include primary-button;
+    background: #ff9f00;
+
+    &:hover {
+      background-color: darken(#ff9f00, 10%);
+    }
+  }
+
+  .add-item {
+    @include primary-button;
+    background: #ff9f00;
+    margin-right: 15px;
+
+    &:hover {
+      background-color: darken(#ff9f00, 10%);
+    }
+  }
+}
+
+.product-dropdown, .quantity input {
+  padding: 10px;
+  margin: 15px 0;
+  width: 350px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.product-dropdown:hover, .quantity input:hover {
+  border-color: #ff9f00;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

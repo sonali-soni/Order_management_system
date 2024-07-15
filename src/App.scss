@@ -1,0 +1,15 @@
+@import './utils/variables';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-color;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
